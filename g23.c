@@ -30,8 +30,8 @@ int main() {
     scanf("%f", &num1);
     scanf("%f", &num2);
     float multiplicationResult = num1 * num2;
-    printf("Multiplication Result (as float): %.2f\n", multiplicationResult);
-    int convertedInteger = (int)multiplicationResult;
+    printf("Multiplication Result (as float): %.2f\n", multiplicationResult);     //105.0
+    int convertedInteger = (int)multiplicationResult;                          //105
     int choice;
     scanf("%d", &choice);
     switch (choice) {
@@ -40,9 +40,10 @@ int main() {
             break;
         case 2:
             convertedInteger -= 5;
-            break;
+            break;                                   //12.4 * 8.5 =105.0
+                                                       //CONVERT TI INT 105.0 to 105
         case 3:
-            convertedInteger /= 2;
+            convertedInteger /= 2;                   //choice 1 = 105+5 =110
             break;
     }
     printf("Converted Integer: %d", convertedInteger);
